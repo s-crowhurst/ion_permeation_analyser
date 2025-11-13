@@ -17,7 +17,7 @@ def read_positions(top, traj, ion_resname, simulation_id, stride=1, chunk_size=1
     frame_data = []
 
     for i, ts in enumerate(u.trajectory[::stride]):
-        # vectorized extraction
+        
         pos = ions.positions.copy()
         ion_ids = ions.ids
 

@@ -104,7 +104,7 @@ threshold = mean(|disp|) + std_thresh * std(|disp|)
 3. **Locate zero-crossings proximal to solvent (near peaks)**
 	Moving from the bulk solvent peaks (Step 2) towards the centre of the channel, identify the inflexion points in the curve. These correspond to the start and end of the channel (membrane region).
 
-![Example membrane bounds from ion density plot](membrane_bounds_top1_traj1.png)
+![Example membrane bounds from ion density plot](imgs/membrane_bounds_top1_traj1.png)
 
 > [!example] **A Note On Edge Detection**
 >To identify the boundaries of the membrane or ion channel, we chose a method that combines Gaussian kernel density estimation (KDE) with second-derivative zero-crossings.
@@ -131,7 +131,7 @@ threshold = mean(|disp|) + std_thresh * std(|disp|)
 	- Entry: outside → inside (−1→0 or +1→0)
     - Exit: inside → outside (0→±1)
 
-![State machine illustrating the permeation logic](state_machine.png)
+![State machine illustrating the permeation logic](imgs/state_machine.png)
 
 4. Determine crossing direction (upward or downward)
 	If an ion entered from below and exits above: **upward**.
